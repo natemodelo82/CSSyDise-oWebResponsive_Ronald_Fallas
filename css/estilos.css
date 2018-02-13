@@ -1,0 +1,214 @@
+body{
+  font-family: "Dancing Script", sans-serif;
+  background-color:  #02010a;
+
+}
+
+img{
+  box-shadow: 2px 2px #02010a;
+}
+#cabecera{
+  background-color: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  float:none;
+}
+
+#titulo{
+  color:white;
+  text-align: left;
+  text-shadow: 2px 2px #02010a;
+  margin-bottom: 0px;
+
+}
+  #menu{background-color: #5b7989; float:left; width: 100%;}
+  #cabecera nav ul {list-style: none; width: 100%; float:right;}
+	#cabecera nav li {float: right; display: inline; }
+
+	#cabecera nav a:link, #cabecera nav a:visited {
+
+		display: inline-block;
+		height: 30px;
+		padding: 5px 1.5em;
+		text-decoration: underline;
+
+	}
+	#cabecera nav a:hover, #cabecera nav a:active{
+    text-decoration: none;
+
+	}
+	#cabecera nav .active a:link, #cabecera nav .active a:visited {
+
+		text-decoration: none;
+	}
+
+
+  #imagenCentral{
+    width: 100%;
+    text-align: center;
+    float:left;
+    background-color: #82c3a6;
+  }
+
+  #imagen1 img{
+    width: 50%;
+  }
+
+@media screen{
+  #contenido{
+      max-width: 900px;
+      margin: auto;
+  }
+
+  footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  footer div{
+    padding: 5px;
+    width: 25%;
+    text-align: center;
+  }
+  #contacto{
+    order:1
+    flex-basis:25%;
+  }
+  #terminos{
+    order:2
+    flex-basis:25%;
+  }
+  #redesSociales{
+    order:3
+    flex-basis:25%;
+  }
+  #derechos{
+    order:4
+    flex-basis:25%;
+  }
+
+  #imagenSecundaria{
+    float: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #d5c75f;
+
+  }
+  #imagenSecundaria1 img , #imagenSecundaria2 img{
+    width:30%;
+
+  }
+
+  #imagenSecundaria1, #imagenSecundaria2 {
+    border-width: 1px;
+    border-style: solid;
+    text-align: center;
+  }
+
+  #imagenSecundaria1{
+    order:1;
+    flex-basis: 50%;
+  }
+
+  #imagenSecundaria2{
+    order:2;
+    flex-basis: 50%;
+  }
+}
+@media (min-width:0px)  and (max-width:900px){
+  header{
+    text-align: center;
+  }
+
+  #contenido{
+      width:100%;
+  }
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  footer div{
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+  }
+
+  #imagenSecundaria{
+    float: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #d5c75f;
+
+  }
+  #imagenSecundaria1 img , #imagenSecundaria2 img{
+    width:30%;
+
+  }
+
+  #imagenSecundaria1, #imagenSecundaria2 {
+    border-width: 1px;
+    border-style: solid;
+    text-align: center;
+  }
+
+  #imagenSecundaria1{
+    order:1;
+    flex-basis: 100%;
+  }
+
+  #imagenSecundaria2{
+    order:2;
+    flex-basis: 100%;
+  }
+}
+
+#imagenSecundaria1:hover{
+  border-width: 2px;
+  box-shadow: 10px 10px #82c3a6;
+  animation: animacionPaisajes 2s;
+}
+#imagenSecundaria2:hover{
+  border-width: 2px;
+  box-shadow: 10px 10px #82c3a6;
+  animation: animacionRetratos 3s;
+}
+
+
+@-webkit-keyframes animacionPaisajes{
+  100% {
+    transform: rotate(10deg);
+    }
+
+  }
+  @-webkit-keyframes animacionRetratos{
+      100%{
+
+        transform: translate(20px,-5px);
+      }
+    }
+
+    @-webkit-keyframes animacionSlideIn{
+        0%{
+          transform: translate(0px,-150px);
+        }
+        60%{
+          transform: translate(0px,-5px);
+        }
+        100%{
+          transform: translate(0px,0px);
+        }
+      }
+      #cabecera{
+        animation: animacionSlideIn 3s;
+      }
+
+  footer{
+    clear:both;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #C6d5c5;
+    padding: 20px;
+  }
